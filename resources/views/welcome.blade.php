@@ -79,7 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @unless(empty($people))
+                        There are some people
+                    @endunless
+                    @foreach ($people as $person)
+                        <li>{{ $person }}</li>
+                    @endforeach
                 </div>
 
                 <div class="links">
