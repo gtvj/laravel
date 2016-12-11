@@ -6,4 +6,5 @@ Use a combination of this README.md file and individual commit messages to see r
 
 ## Artisan
 
-* `artisan` shows related commands
+* `php artisan` shows related commands
+* `php artisan help make:controller` shows help related to the Controller generator
