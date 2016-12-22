@@ -6,7 +6,8 @@
             <h1>{{ $card->title }}</h1>
             <ul class="list-group">
                 @foreach($card->notes as $note)
-                    <li class="list-group-item">{{ $note->body }}</li>
+                    <li class="list-group-item">{{ $note->body }} <a href="#">{{ $note->user->username }}</a> <span class="pull-right"><a
+                                    href="/notes/{{$note->id}}/edit">Edit</a></span></li>
                 @endforeach
             </ul>
             <h3>Add a new note</h3>

@@ -10,6 +10,11 @@ class Note extends Model
 
     public function card()
     {
-        $this->belongsTo(Card::class);
+        return $this->belongsTo(Card::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
