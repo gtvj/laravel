@@ -22,9 +22,9 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::patch('notes/{note}', 'NotesController@update');
 
+    Auth::routes();
+
+    Route::get('/dashboard', 'HomeController@index');
 });
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
